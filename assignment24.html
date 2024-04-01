@@ -6,29 +6,50 @@
     <title>JS</title>
 </head>
 <body>
-    <h1>JavaScript is Love💛<h1>
+    <h1>Circle Operation</h1>
+    <h3> Calculates area of circle</h3>
+    <script>
+       
+        console.log('Type 1: Argument and Return');
+        function calculateArea1(r)
+        {
+            const area  = 2.14 * r * r;
+            return area;
+        }
+        const r = calculateArea1(2);
+        console.log(Area of Circle 1 : ${r});
+        
+        
+        console.log('Type 2: Argument but no Return');
+        function calculateArea2(r2)
+        {
+            const area  = 2.14 * r2 * r2;
+            console.log(Area of Circle 2 : ${r2});
+        }
+        const r2 = calculateArea2(3);
+        
+   
+        console.log('Type 3: No Argument but Return');
+        const r3 = 4;
+        function calculateArea3()
+        {
+            const area3  = 2.14 * r3 * r3;
+            return area3;
+        }
+        const Area3 = calculateArea3();
+        console.log(Area of Circle 3 : ${Area3});
 
-        <script>
+        
+        console.log('Type 4: No Argument but No Return');
+        const r4 = 6;
+        function calculateArea4()
+        {
+            const area4  = 2.14 * r4 * r4;
+            console.log(Area of Circle 4 : ${area4});
+        }
+        calculateArea4();
+        
 
-            function calculateArea(length, breadth)
-            {
-                const area = length * breadth;
-
-                console.log(`Area for lenght ${length} and breadth ${breadth} is ${area}`);
-            }
-
-            const l1 = 5;
-            const b1 = 3;
-            CalculateArea(l1, b1);
-            
-            const l2 = 7;
-            const b2 = 4;
-            CalculateArea(l2, b2);
-            
-            const l3 = 5;
-            const b3 = 3;
-            CalculateArea(l3, b3);
-            
-        </script>
-    </body>
+    </script>
+</body>
 </html>
