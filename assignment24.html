@@ -17,27 +17,27 @@
             return area;
         }
         const r = calculateArea1(2);
-        console.log(Area of Circle 1 : ${r});
+        console.log(`Area of Circle 1 : ${r}`);
         
-        
-        console.log('Type 2: Argument but no Return');
-        function calculateArea2(r2)
-        {
-            const area  = 2.14 * r2 * r2;
-            console.log(Area of Circle 2 : ${r2});
-        }
-        const r2 = calculateArea2(3);
-        
-   
-        console.log('Type 3: No Argument but Return');
-        const r3 = 4;
+
+        console.log('Type 2: No Argument but Return');
+        const r2 = 4;
         function calculateArea3()
         {
             const area3  = 2.14 * r3 * r3;
             return area3;
         }
         const Area3 = calculateArea3();
-        console.log(Area of Circle 3 : ${Area3});
+        console.log(`Area of Circle 3 : ${Area3}`);
+        
+        
+        console.log('Type 3: Argument but no Return');
+        function calculateArea2(r2)
+        {
+            const area  = 2.14 * r2 * r2;
+            console.log(`Area of Circle 2 : ${r2}`);
+        }
+        const r3 = calculateArea2(3);
 
         
         console.log('Type 4: No Argument but No Return');
@@ -45,7 +45,7 @@
         function calculateArea4()
         {
             const area4  = 2.14 * r4 * r4;
-            console.log(Area of Circle 4 : ${area4});
+            console.log(`Area of Circle 4 : ${area4}`);
         }
         calculateArea4();
         
